@@ -1,0 +1,435 @@
+{
+  "chaoslib-version": "1.19.0",
+  "platform": "Linux-4.15.0-142-generic-x86_64-with-Ubuntu-18.04-bionic",
+  "node": "Shishir",
+  "experiment": {
+    "version": "1.0.0",
+    "title": "Make some requests fail and see what happens.",
+    "description": "If responses fail, the application should do something about it.",
+    "configuration": {
+      "ingress_addr": {
+        "type": "env",
+        "key": "INGRESS_ADDR"
+      }
+    },
+    "steady-state-hypothesis": {
+      "title": "The app is healthy",
+      "probes": [
+        {
+          "type": "probe",
+          "name": "request-try",
+          "tolerance": 200,
+          "provider": {
+            "type": "http",
+            "timeout": 5,
+            "verify_tls": false,
+            "url": "http://${ingress_addr}/",
+            "headers": {
+              "Host": "shishir.hello.com"
+            }
+          }
+        },
+        {
+          "type": "probe",
+          "tolerance": 200,
+          "ref": "request-try"
+        },
+        {
+          "type": "probe",
+          "tolerance": 200,
+          "ref": "request-try"
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "abort-failure",
+        "provider": {
+          "type": "python",
+          "module": "chaosistio.fault.actions",
+          "func": "add_abort_fault",
+          "arguments": {
+            "virtual_service_name": "vs",
+            "http_status": 500,
+            "routes": [
+              {
+                "destination": {
+                  "host": "hello-world-svc",
+                  "subset": "primary"
+                }
+              }
+            ],
+            "percentage": 20,
+            "version": "networking.istio.io/v1alpha3",
+            "ns": "chaos"
+          }
+        },
+        "pauses": {
+          "after": 2
+        }
+      }
+    ],
+    "dry": false
+  },
+  "start": "2021-05-09T19:08:38.700005",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "type": "probe",
+            "name": "request-try",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 5,
+              "verify_tls": false,
+              "url": "http://${ingress_addr}/",
+              "headers": {
+                "Host": "shishir.hello.com"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "x-powered-by": "Express",
+              "content-type": "text/html; charset=utf-8",
+              "content-length": "78",
+              "etag": "W/\"4e-QWzVRavhRzevRuyLj+XT4d0rG6c\"",
+              "date": "Sun, 09 May 2021 19:08:38 GMT",
+              "x-envoy-upstream-service-time": "0",
+              "server": "istio-envoy"
+            },
+            "body": "hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube"
+          },
+          "status": "succeeded",
+          "start": "2021-05-09T19:08:38.700679",
+          "end": "2021-05-09T19:08:38.705083",
+          "duration": 0.004404,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "request-try",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 5,
+              "verify_tls": false,
+              "url": "http://${ingress_addr}/",
+              "headers": {
+                "Host": "shishir.hello.com"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "x-powered-by": "Express",
+              "content-type": "text/html; charset=utf-8",
+              "content-length": "78",
+              "etag": "W/\"4e-QWzVRavhRzevRuyLj+XT4d0rG6c\"",
+              "date": "Sun, 09 May 2021 19:08:38 GMT",
+              "x-envoy-upstream-service-time": "0",
+              "server": "istio-envoy"
+            },
+            "body": "hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube"
+          },
+          "status": "succeeded",
+          "start": "2021-05-09T19:08:38.705413",
+          "end": "2021-05-09T19:08:38.708764",
+          "duration": 0.003351,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "request-try",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 5,
+              "verify_tls": false,
+              "url": "http://${ingress_addr}/",
+              "headers": {
+                "Host": "shishir.hello.com"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "x-powered-by": "Express",
+              "content-type": "text/html; charset=utf-8",
+              "content-length": "78",
+              "etag": "W/\"4e-QWzVRavhRzevRuyLj+XT4d0rG6c\"",
+              "date": "Sun, 09 May 2021 19:08:38 GMT",
+              "x-envoy-upstream-service-time": "0",
+              "server": "istio-envoy"
+            },
+            "body": "hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube"
+          },
+          "status": "succeeded",
+          "start": "2021-05-09T19:08:38.709114",
+          "end": "2021-05-09T19:08:38.712790",
+          "duration": 0.003676,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "type": "probe",
+            "name": "request-try",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 5,
+              "verify_tls": false,
+              "url": "http://${ingress_addr}/",
+              "headers": {
+                "Host": "shishir.hello.com"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "x-powered-by": "Express",
+              "content-type": "text/html; charset=utf-8",
+              "content-length": "78",
+              "etag": "W/\"4e-QWzVRavhRzevRuyLj+XT4d0rG6c\"",
+              "date": "Sun, 09 May 2021 19:08:40 GMT",
+              "x-envoy-upstream-service-time": "2",
+              "server": "istio-envoy"
+            },
+            "body": "hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube"
+          },
+          "status": "succeeded",
+          "start": "2021-05-09T19:08:40.756437",
+          "end": "2021-05-09T19:08:40.765875",
+          "duration": 0.009438,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "request-try",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 5,
+              "verify_tls": false,
+              "url": "http://${ingress_addr}/",
+              "headers": {
+                "Host": "shishir.hello.com"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "x-powered-by": "Express",
+              "content-type": "text/html; charset=utf-8",
+              "content-length": "78",
+              "etag": "W/\"4e-QWzVRavhRzevRuyLj+XT4d0rG6c\"",
+              "date": "Sun, 09 May 2021 19:08:40 GMT",
+              "x-envoy-upstream-service-time": "0",
+              "server": "istio-envoy"
+            },
+            "body": "hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube"
+          },
+          "status": "succeeded",
+          "start": "2021-05-09T19:08:40.766168",
+          "end": "2021-05-09T19:08:40.771072",
+          "duration": 0.004904,
+          "tolerance_met": true
+        },
+        {
+          "activity": {
+            "type": "probe",
+            "name": "request-try",
+            "tolerance": 200,
+            "provider": {
+              "type": "http",
+              "timeout": 5,
+              "verify_tls": false,
+              "url": "http://${ingress_addr}/",
+              "headers": {
+                "Host": "shishir.hello.com"
+              }
+            }
+          },
+          "output": {
+            "status": 200,
+            "headers": {
+              "x-powered-by": "Express",
+              "content-type": "text/html; charset=utf-8",
+              "content-length": "78",
+              "etag": "W/\"4e-QWzVRavhRzevRuyLj+XT4d0rG6c\"",
+              "date": "Sun, 09 May 2021 19:08:40 GMT",
+              "x-envoy-upstream-service-time": "0",
+              "server": "istio-envoy"
+            },
+            "body": "hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube"
+          },
+          "status": "succeeded",
+          "start": "2021-05-09T19:08:40.771395",
+          "end": "2021-05-09T19:08:40.774640",
+          "duration": 0.003245,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "during": []
+  },
+  "run": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "abort-failure",
+        "provider": {
+          "type": "python",
+          "module": "chaosistio.fault.actions",
+          "func": "add_abort_fault",
+          "arguments": {
+            "virtual_service_name": "vs",
+            "http_status": 500,
+            "routes": [
+              {
+                "destination": {
+                  "host": "hello-world-svc",
+                  "subset": "primary"
+                }
+              }
+            ],
+            "percentage": 20,
+            "version": "networking.istio.io/v1alpha3",
+            "ns": "chaos"
+          }
+        },
+        "pauses": {
+          "after": 2
+        }
+      },
+      "output": {
+        "status": 200,
+        "body": {
+          "apiVersion": "networking.istio.io/v1alpha3",
+          "kind": "VirtualService",
+          "metadata": {
+            "annotations": {
+              "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"networking.istio.io/v1beta1\",\"kind\":\"VirtualService\",\"metadata\":{\"annotations\":{},\"name\":\"vs\",\"namespace\":\"chaos\"},\"spec\":{\"gateways\":[\"gw\"],\"hosts\":[\"shishir.hello.com\"],\"http\":[{\"match\":[{\"uri\":{\"prefix\":\"/\"}}],\"retries\":{\"attempts\":10,\"perTryTimeout\":\"2s\"},\"route\":[{\"destination\":{\"host\":\"hello-world-svc\",\"port\":{\"number\":3000},\"subset\":\"primary\"}}]}]}}\n"
+            },
+            "creationTimestamp": "2021-05-07T19:12:54Z",
+            "generation": 28,
+            "managedFields": [
+              {
+                "apiVersion": "networking.istio.io/v1beta1",
+                "fieldsType": "FieldsV1",
+                "fieldsV1": {
+                  "f:metadata": {
+                    "f:annotations": {
+                      ".": {},
+                      "f:kubectl.kubernetes.io/last-applied-configuration": {}
+                    }
+                  },
+                  "f:spec": {
+                    ".": {},
+                    "f:gateways": {},
+                    "f:hosts": {}
+                  }
+                },
+                "manager": "kubectl-client-side-apply",
+                "operation": "Update",
+                "time": "2021-05-09T19:08:17Z"
+              },
+              {
+                "apiVersion": "networking.istio.io/v1alpha3",
+                "fieldsType": "FieldsV1",
+                "fieldsV1": {
+                  "f:spec": {
+                    "f:http": {}
+                  }
+                },
+                "manager": "OpenAPI-Generator",
+                "operation": "Update",
+                "time": "2021-05-09T19:08:38Z"
+              }
+            ],
+            "name": "vs",
+            "namespace": "chaos",
+            "resourceVersion": "340686",
+            "uid": "547ccfbc-62d2-4062-a7d3-51b7a5f29431"
+          },
+          "spec": {
+            "gateways": [
+              "gw"
+            ],
+            "hosts": [
+              "shishir.hello.com"
+            ],
+            "http": [
+              {
+                "fault": {
+                  "abort": {
+                    "httpStatus": 500,
+                    "percentage": {
+                      "value": 20
+                    }
+                  }
+                },
+                "match": [
+                  {
+                    "uri": {
+                      "prefix": "/"
+                    }
+                  }
+                ],
+                "retries": {
+                  "attempts": 10,
+                  "perTryTimeout": "2s"
+                },
+                "route": [
+                  {
+                    "destination": {
+                      "host": "hello-world-svc",
+                      "port": {
+                        "number": 3000
+                      },
+                      "subset": "primary"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "headers": {
+          "Cache-Control": "no-cache, private",
+          "Content-Type": "application/json",
+          "X-Kubernetes-Pf-Flowschema-Uid": "ea2fb2d0-82ca-4585-ad52-f81bc9e1b007",
+          "X-Kubernetes-Pf-Prioritylevel-Uid": "7b1ff444-f341-4cc4-99cf-84878bfe8d33",
+          "Date": "Sun, 09 May 2021 19:08:38 GMT",
+          "Content-Length": "1580"
+        }
+      },
+      "status": "succeeded",
+      "start": "2021-05-09T19:08:38.714011",
+      "end": "2021-05-09T19:08:38.752881",
+      "duration": 0.03887
+    }
+  ],
+  "rollbacks": [],
+  "end": "2021-05-09T19:08:40.775337",
+  "duration": 2.075808048248291
+}

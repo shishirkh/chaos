@@ -1,0 +1,647 @@
+[36m[2021-05-09 20:34:36 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-05-09 20:34:36 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-05-09 20:34:36 DEBUG] [cli:78][39m Using settings file '/home/dell/.chaostoolkit/settings.yaml'
+[36m[2021-05-09 20:34:38 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/home/dell/.chaostoolkit/settings.yaml'.
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-09 20:34:38 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-09 20:34:38 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-05-09 20:34:38 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-05-09 20:34:38 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-09 20:34:38 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-09 20:34:38 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-09 20:34:38 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-05-09 20:34:38 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-09 20:34:38 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-09 20:34:38 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-05-09 20:34:38 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-09 20:34:38 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-09 20:34:38 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-09 20:34:38 INFO] [run:323][39m Running experiment: Make some requests fail and see what happens.
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-05-09 20:34:38 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-05-09 20:34:38 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-09 20:34:38 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-05-09 20:34:38 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-09 20:34:38 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-09 20:34:38 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 15:04:38 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-09 20:34:38 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-09 20:34:38 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-09 20:34:38 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 15:04:38 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-09 20:34:38 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-09 20:34:38 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-09 20:34:38 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 15:04:38 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-09 20:34:38 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-09 20:34:38 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-09 20:34:38 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 15:04:38 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-09 20:34:38 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-09 20:34:38 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-09 20:34:38 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 15:04:38 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-09 20:34:38 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-05-09 20:34:38 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-05-09 20:34:38 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-09 20:34:38 INFO] [activity:162][39m Action: abort-failure
+[36m[2021-05-09 20:34:38 DEBUG] [python:36][39m Activity 'abort-failure' loaded from '/home/dell/.venvs/chaostk/lib/python3.6/site-packages/chaosistio/fault/actions.py'
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-09 20:34:38 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-09 20:34:38 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'body': {'apiVersion': 'networking.istio.io/v1alpha3', 'kind': 'VirtualService', 'metadata': {'annotations': {'kubectl.kubernetes.io/last-applied-configuration': '{"apiVersion":"networking.istio.io/v1beta1","kind":"VirtualService","metadata":{"annotations":{},"name":"vs","namespace":"chaos"},"spec":{"gateways":["gw"],"hosts":["shishir.hello.com"],"http":[{"match":[{"uri":{"prefix":"/"}}],"route":[{"destination":{"host":"hello-world-svc","port":{"number":3000},"subset":"primary"}}]}]}}\n'}, 'creationTimestamp': '2021-05-07T19:12:54Z', 'generation': 16, 'managedFields': [{'apiVersion': 'networking.istio.io/v1beta1', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:metadata': {'f:annotations': {'.': {}, 'f:kubectl.kubernetes.io/last-applied-configuration': {}}}, 'f:spec': {'.': {}, 'f:gateways': {}, 'f:hosts': {}}}, 'manager': 'kubectl-client-side-apply', 'operation': 'Update', 'time': '2021-05-09T13:44:05Z'}, {'apiVersion': 'networking.istio.io/v1alpha3', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:spec': {'f:http': {}}}, 'manager': 'OpenAPI-Generator', 'operation': 'Update', 'time': '2021-05-09T15:04:38Z'}], 'name': 'vs', 'namespace': 'chaos', 'resourceVersion': '327834', 'uid': '547ccfbc-62d2-4062-a7d3-51b7a5f29431'}, 'spec': {'gateways': ['gw'], 'hosts': ['shishir.hello.com'], 'http': [{'fault': {'abort': {'httpStatus': 500, 'percentage': {'value': 50}}}, 'match': [{'uri': {'prefix': '/'}}], 'route': [{'destination': {'host': 'hello-world-svc', 'port': {'number': 3000}, 'subset': 'primary'}}]}]}}, 'headers': {'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Kubernetes-Pf-Flowschema-Uid': 'ea2fb2d0-82ca-4585-ad52-f81bc9e1b007', 'X-Kubernetes-Pf-Prioritylevel-Uid': '7b1ff444-f341-4cc4-99cf-84878bfe8d33', 'Date': 'Sun, 09 May 2021 15:04:38 GMT', 'Content-Length': '1478'}}'
+[32m[2021-05-09 20:34:38 INFO] [activity:199][39m Pausing after activity for 2s...
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-09 20:34:40 DEBUG] [run:496][39m Running steady-state hypothesis after the method
+[32m[2021-05-09 20:34:40 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-09 20:34:40 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-09 20:34:40 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 15:04:40 GMT', 'x-envoy-upstream-service-time': '1', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-09 20:34:40 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-09 20:34:40 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-09 20:34:40 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 15:04:40 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-09 20:34:40 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-09 20:34:40 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-09 20:34:40 DEBUG] [activity:180][39m   => succeeded with '{'status': 500, 'headers': {'content-length': '18', 'content-type': 'text/plain', 'date': 'Sun, 09 May 2021 15:04:40 GMT', 'server': 'istio-envoy'}, 'body': 'fault filter abort'}'
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-09 20:34:40 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2021-05-09 20:34:40 CRITICAL] [run:511][39m Steady state probe 'request-try' is not in the given tolerance so failing this experiment
+[32m[2021-05-09 20:34:40 INFO] [run:421][39m Experiment ended with status: deviated
+[32m[2021-05-09 20:34:40 INFO] [run:424][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-09 20:34:40 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-05-09 20:34:40 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:28:17 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-05-10 00:28:17 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-05-10 00:28:17 DEBUG] [cli:78][39m Using settings file '/home/dell/.chaostoolkit/settings.yaml'
+[36m[2021-05-10 00:28:19 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/home/dell/.chaostoolkit/settings.yaml'.
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:28:19 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:28:19 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-05-10 00:28:19 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-05-10 00:28:19 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:28:19 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:28:19 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:28:19 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-05-10 00:28:19 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:28:19 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:28:19 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-05-10 00:28:19 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:28:19 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:28:19 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:28:19 INFO] [run:323][39m Running experiment: Make some requests fail and see what happens.
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-05-10 00:28:19 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-05-10 00:28:19 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:28:19 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-05-10 00:28:19 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:28:19 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:28:19 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 18:58:19 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:28:19 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:28:19 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:28:19 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 18:58:19 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:28:19 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:28:19 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:28:19 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 18:58:19 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:28:19 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:28:19 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:28:19 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 18:58:19 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:28:19 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:28:19 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:28:19 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 18:58:19 GMT', 'x-envoy-upstream-service-time': '1', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:28:19 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-05-10 00:28:19 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-05-10 00:28:19 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:28:19 INFO] [activity:162][39m Action: abort-failure
+[36m[2021-05-10 00:28:19 DEBUG] [python:36][39m Activity 'abort-failure' loaded from '/home/dell/.venvs/chaostk/lib/python3.6/site-packages/chaosistio/fault/actions.py'
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:28:19 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:28:19 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'body': {'apiVersion': 'networking.istio.io/v1alpha3', 'kind': 'VirtualService', 'metadata': {'annotations': {'kubectl.kubernetes.io/last-applied-configuration': '{"apiVersion":"networking.istio.io/v1beta1","kind":"VirtualService","metadata":{"annotations":{},"name":"vs","namespace":"chaos"},"spec":{"gateways":["gw"],"hosts":["shishir.hello.com"],"http":[{"match":[{"uri":{"prefix":"/"}}],"retries":{"attempts":3,"perTryTimeout":"2s"},"route":[{"destination":{"host":"hello-world-svc","port":{"number":3000},"subset":"primary"}}]}]}}\n'}, 'creationTimestamp': '2021-05-07T19:12:54Z', 'generation': 18, 'managedFields': [{'apiVersion': 'networking.istio.io/v1beta1', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:metadata': {'f:annotations': {'.': {}, 'f:kubectl.kubernetes.io/last-applied-configuration': {}}}, 'f:spec': {'.': {}, 'f:gateways': {}, 'f:hosts': {}}}, 'manager': 'kubectl-client-side-apply', 'operation': 'Update', 'time': '2021-05-09T18:57:57Z'}, {'apiVersion': 'networking.istio.io/v1alpha3', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:spec': {'f:http': {}}}, 'manager': 'OpenAPI-Generator', 'operation': 'Update', 'time': '2021-05-09T18:58:19Z'}], 'name': 'vs', 'namespace': 'chaos', 'resourceVersion': '339906', 'uid': '547ccfbc-62d2-4062-a7d3-51b7a5f29431'}, 'spec': {'gateways': ['gw'], 'hosts': ['shishir.hello.com'], 'http': [{'fault': {'abort': {'httpStatus': 500, 'percentage': {'value': 50}}}, 'match': [{'uri': {'prefix': '/'}}], 'retries': {'attempts': 3, 'perTryTimeout': '2s'}, 'route': [{'destination': {'host': 'hello-world-svc', 'port': {'number': 3000}, 'subset': 'primary'}}]}]}}, 'headers': {'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Kubernetes-Pf-Flowschema-Uid': 'ea2fb2d0-82ca-4585-ad52-f81bc9e1b007', 'X-Kubernetes-Pf-Prioritylevel-Uid': '7b1ff444-f341-4cc4-99cf-84878bfe8d33', 'Date': 'Sun, 09 May 2021 18:58:19 GMT', 'Content-Length': '1578'}}'
+[32m[2021-05-10 00:28:19 INFO] [activity:199][39m Pausing after activity for 2s...
+[36m[2021-05-10 00:28:22 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:28:22 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:28:22 DEBUG] [run:496][39m Running steady-state hypothesis after the method
+[32m[2021-05-10 00:28:22 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:28:22 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:28:22 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:28:22 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:28:22 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 18:58:22 GMT', 'x-envoy-upstream-service-time': '1', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:28:22 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:28:22 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:28:22 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:28:22 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:28:22 DEBUG] [activity:180][39m   => succeeded with '{'status': 500, 'headers': {'content-length': '18', 'content-type': 'text/plain', 'date': 'Sun, 09 May 2021 18:58:21 GMT', 'server': 'istio-envoy'}, 'body': 'fault filter abort'}'
+[36m[2021-05-10 00:28:22 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:28:22 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:28:22 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2021-05-10 00:28:22 CRITICAL] [run:511][39m Steady state probe 'request-try' is not in the given tolerance so failing this experiment
+[32m[2021-05-10 00:28:22 INFO] [run:421][39m Experiment ended with status: deviated
+[32m[2021-05-10 00:28:22 INFO] [run:424][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2021-05-10 00:28:22 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:28:22 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-05-10 00:28:22 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:29:54 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-05-10 00:29:54 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-05-10 00:29:54 DEBUG] [cli:78][39m Using settings file '/home/dell/.chaostoolkit/settings.yaml'
+[36m[2021-05-10 00:29:55 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/home/dell/.chaostoolkit/settings.yaml'.
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:29:55 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:29:55 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-05-10 00:29:55 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-05-10 00:29:55 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:29:55 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:29:55 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:29:55 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-05-10 00:29:55 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:29:55 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:29:55 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-05-10 00:29:55 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:29:55 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:29:55 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:29:55 INFO] [run:323][39m Running experiment: Make some requests fail and see what happens.
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-05-10 00:29:55 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-05-10 00:29:55 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:29:55 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-05-10 00:29:55 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:29:55 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:29:55 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 18:59:55 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:29:55 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:29:55 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:29:55 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 18:59:55 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:29:55 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:29:55 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:29:55 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 18:59:55 GMT', 'x-envoy-upstream-service-time': '1', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:29:55 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:29:55 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:29:55 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:29:56 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 18:59:56 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:29:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:29:56 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:29:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:29:56 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:29:56 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 18:59:56 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:29:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:29:56 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-05-10 00:29:56 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-05-10 00:29:56 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-05-10 00:29:56 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-05-10 00:29:56 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:29:56 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:29:56 INFO] [activity:162][39m Action: abort-failure
+[36m[2021-05-10 00:29:56 DEBUG] [python:36][39m Activity 'abort-failure' loaded from '/home/dell/.venvs/chaostk/lib/python3.6/site-packages/chaosistio/fault/actions.py'
+[36m[2021-05-10 00:29:56 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:29:56 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:29:56 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'body': {'apiVersion': 'networking.istio.io/v1alpha3', 'kind': 'VirtualService', 'metadata': {'annotations': {'kubectl.kubernetes.io/last-applied-configuration': '{"apiVersion":"networking.istio.io/v1beta1","kind":"VirtualService","metadata":{"annotations":{},"name":"vs","namespace":"chaos"},"spec":{"gateways":["gw"],"hosts":["shishir.hello.com"],"http":[{"match":[{"uri":{"prefix":"/"}}],"retries":{"attempts":10,"perTryTimeout":"2s"},"route":[{"destination":{"host":"hello-world-svc","port":{"number":3000},"subset":"primary"}}]}]}}\n'}, 'creationTimestamp': '2021-05-07T19:12:54Z', 'generation': 20, 'managedFields': [{'apiVersion': 'networking.istio.io/v1beta1', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:metadata': {'f:annotations': {'.': {}, 'f:kubectl.kubernetes.io/last-applied-configuration': {}}}, 'f:spec': {'.': {}, 'f:gateways': {}, 'f:hosts': {}}}, 'manager': 'kubectl-client-side-apply', 'operation': 'Update', 'time': '2021-05-09T18:59:34Z'}, {'apiVersion': 'networking.istio.io/v1alpha3', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:spec': {'f:http': {}}}, 'manager': 'OpenAPI-Generator', 'operation': 'Update', 'time': '2021-05-09T18:59:56Z'}], 'name': 'vs', 'namespace': 'chaos', 'resourceVersion': '340029', 'uid': '547ccfbc-62d2-4062-a7d3-51b7a5f29431'}, 'spec': {'gateways': ['gw'], 'hosts': ['shishir.hello.com'], 'http': [{'fault': {'abort': {'httpStatus': 500, 'percentage': {'value': 50}}}, 'match': [{'uri': {'prefix': '/'}}], 'retries': {'attempts': 10, 'perTryTimeout': '2s'}, 'route': [{'destination': {'host': 'hello-world-svc', 'port': {'number': 3000}, 'subset': 'primary'}}]}]}}, 'headers': {'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Kubernetes-Pf-Flowschema-Uid': 'ea2fb2d0-82ca-4585-ad52-f81bc9e1b007', 'X-Kubernetes-Pf-Prioritylevel-Uid': '7b1ff444-f341-4cc4-99cf-84878bfe8d33', 'Date': 'Sun, 09 May 2021 18:59:56 GMT', 'Content-Length': '1580'}}'
+[32m[2021-05-10 00:29:56 INFO] [activity:199][39m Pausing after activity for 2s...
+[36m[2021-05-10 00:29:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:29:58 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:29:58 DEBUG] [run:496][39m Running steady-state hypothesis after the method
+[32m[2021-05-10 00:29:58 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:29:58 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:29:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:29:58 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:29:58 DEBUG] [activity:180][39m   => succeeded with '{'status': 500, 'headers': {'content-length': '18', 'content-type': 'text/plain', 'date': 'Sun, 09 May 2021 18:59:57 GMT', 'server': 'istio-envoy'}, 'body': 'fault filter abort'}'
+[36m[2021-05-10 00:29:58 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:29:58 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:29:58 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2021-05-10 00:29:58 CRITICAL] [run:511][39m Steady state probe 'request-try' is not in the given tolerance so failing this experiment
+[32m[2021-05-10 00:29:58 INFO] [run:421][39m Experiment ended with status: deviated
+[32m[2021-05-10 00:29:58 INFO] [run:424][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2021-05-10 00:29:58 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:29:58 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-05-10 00:29:58 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:31:01 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-05-10 00:31:01 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-05-10 00:31:01 DEBUG] [cli:78][39m Using settings file '/home/dell/.chaostoolkit/settings.yaml'
+[36m[2021-05-10 00:31:03 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/home/dell/.chaostoolkit/settings.yaml'.
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:31:03 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:31:03 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-05-10 00:31:03 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-05-10 00:31:03 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:31:03 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:31:03 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:31:03 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-05-10 00:31:03 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:31:03 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:31:03 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-05-10 00:31:03 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:31:03 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:31:03 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:31:03 INFO] [run:323][39m Running experiment: Make some requests fail and see what happens.
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-05-10 00:31:03 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-05-10 00:31:03 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:31:03 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-05-10 00:31:03 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:03 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:03 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:01:03 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:03 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:03 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:03 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:01:03 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:03 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:03 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:03 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:01:03 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:03 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-05-10 00:31:03 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-05-10 00:31:03 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:03 INFO] [activity:162][39m Action: abort-failure
+[36m[2021-05-10 00:31:03 DEBUG] [python:36][39m Activity 'abort-failure' loaded from '/home/dell/.venvs/chaostk/lib/python3.6/site-packages/chaosistio/fault/actions.py'
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:31:03 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:31:03 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'body': {'apiVersion': 'networking.istio.io/v1alpha3', 'kind': 'VirtualService', 'metadata': {'annotations': {'kubectl.kubernetes.io/last-applied-configuration': '{"apiVersion":"networking.istio.io/v1beta1","kind":"VirtualService","metadata":{"annotations":{},"name":"vs","namespace":"chaos"},"spec":{"gateways":["gw"],"hosts":["shishir.hello.com"],"http":[{"match":[{"uri":{"prefix":"/"}}],"retries":{"attempts":10,"perTryTimeout":"2s"},"route":[{"destination":{"host":"hello-world-svc","port":{"number":3000},"subset":"primary"}}]}]}}\n'}, 'creationTimestamp': '2021-05-07T19:12:54Z', 'generation': 22, 'managedFields': [{'apiVersion': 'networking.istio.io/v1beta1', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:metadata': {'f:annotations': {'.': {}, 'f:kubectl.kubernetes.io/last-applied-configuration': {}}}, 'f:spec': {'.': {}, 'f:gateways': {}, 'f:hosts': {}}}, 'manager': 'kubectl-client-side-apply', 'operation': 'Update', 'time': '2021-05-09T19:00:56Z'}, {'apiVersion': 'networking.istio.io/v1alpha3', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:spec': {'f:http': {}}}, 'manager': 'OpenAPI-Generator', 'operation': 'Update', 'time': '2021-05-09T19:01:03Z'}], 'name': 'vs', 'namespace': 'chaos', 'resourceVersion': '340114', 'uid': '547ccfbc-62d2-4062-a7d3-51b7a5f29431'}, 'spec': {'gateways': ['gw'], 'hosts': ['shishir.hello.com'], 'http': [{'fault': {'abort': {'httpStatus': 500, 'percentage': {'value': 25}}}, 'match': [{'uri': {'prefix': '/'}}], 'retries': {'attempts': 10, 'perTryTimeout': '2s'}, 'route': [{'destination': {'host': 'hello-world-svc', 'port': {'number': 3000}, 'subset': 'primary'}}]}]}}, 'headers': {'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Kubernetes-Pf-Flowschema-Uid': 'ea2fb2d0-82ca-4585-ad52-f81bc9e1b007', 'X-Kubernetes-Pf-Prioritylevel-Uid': '7b1ff444-f341-4cc4-99cf-84878bfe8d33', 'Date': 'Sun, 09 May 2021 19:01:03 GMT', 'Content-Length': '1580'}}'
+[32m[2021-05-10 00:31:03 INFO] [activity:199][39m Pausing after activity for 2s...
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:31:05 DEBUG] [run:496][39m Running steady-state hypothesis after the method
+[32m[2021-05-10 00:31:05 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:05 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:05 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:01:05 GMT', 'x-envoy-upstream-service-time': '2', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:05 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:05 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:05 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:01:05 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:05 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:05 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:05 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:01:05 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:05 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-05-10 00:31:05 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-05-10 00:31:05 INFO] [run:809][39m Let's rollback...
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-05-10 00:31:05 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-05-10 00:31:05 INFO] [run:421][39m Experiment ended with status: completed
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:31:05 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-05-10 00:31:05 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:31:31 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-05-10 00:31:31 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-05-10 00:31:31 DEBUG] [cli:78][39m Using settings file '/home/dell/.chaostoolkit/settings.yaml'
+[36m[2021-05-10 00:31:32 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/home/dell/.chaostoolkit/settings.yaml'.
+[36m[2021-05-10 00:31:32 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:31:32 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:31:32 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:31:32 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-05-10 00:31:32 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-05-10 00:31:32 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:31:32 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:31:32 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:31:32 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-05-10 00:31:32 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:31:32 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:31:32 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-05-10 00:31:32 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:31:32 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:31:32 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:31:32 INFO] [run:323][39m Running experiment: Make some requests fail and see what happens.
+[36m[2021-05-10 00:31:32 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-05-10 00:31:32 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-05-10 00:31:32 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-05-10 00:31:32 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:31:32 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-05-10 00:31:32 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:31:32 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:31:32 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:32 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:32 DEBUG] [activity:180][39m   => succeeded with '{'status': 500, 'headers': {'content-length': '18', 'content-type': 'text/plain', 'date': 'Sun, 09 May 2021 19:01:32 GMT', 'server': 'istio-envoy'}, 'body': 'fault filter abort'}'
+[36m[2021-05-10 00:31:32 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:32 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:31:32 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2021-05-10 00:31:32 CRITICAL] [run:480][39m Steady state probe 'request-try' is not in the given tolerance so failing this experiment
+[32m[2021-05-10 00:31:32 INFO] [run:421][39m Experiment ended with status: failed
+[36m[2021-05-10 00:31:32 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:31:32 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-05-10 00:31:32 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:31:38 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-05-10 00:31:38 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-05-10 00:31:38 DEBUG] [cli:78][39m Using settings file '/home/dell/.chaostoolkit/settings.yaml'
+[36m[2021-05-10 00:31:39 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/home/dell/.chaostoolkit/settings.yaml'.
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:31:39 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:31:39 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-05-10 00:31:39 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-05-10 00:31:39 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:31:39 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:31:39 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:31:39 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-05-10 00:31:39 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:31:39 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:31:39 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-05-10 00:31:39 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:31:39 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:31:39 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:31:39 INFO] [run:323][39m Running experiment: Make some requests fail and see what happens.
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-05-10 00:31:39 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-05-10 00:31:39 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:31:39 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-05-10 00:31:39 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:39 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:39 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:01:39 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:39 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:39 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:39 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:01:39 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:39 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:39 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:39 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:01:39 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:39 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:39 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:39 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:01:39 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:39 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:39 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:39 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:01:39 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:39 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-05-10 00:31:39 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-05-10 00:31:39 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:39 INFO] [activity:162][39m Action: abort-failure
+[36m[2021-05-10 00:31:39 DEBUG] [python:36][39m Activity 'abort-failure' loaded from '/home/dell/.venvs/chaostk/lib/python3.6/site-packages/chaosistio/fault/actions.py'
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:31:39 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:31:39 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'body': {'apiVersion': 'networking.istio.io/v1alpha3', 'kind': 'VirtualService', 'metadata': {'annotations': {'kubectl.kubernetes.io/last-applied-configuration': '{"apiVersion":"networking.istio.io/v1beta1","kind":"VirtualService","metadata":{"annotations":{},"name":"vs","namespace":"chaos"},"spec":{"gateways":["gw"],"hosts":["shishir.hello.com"],"http":[{"match":[{"uri":{"prefix":"/"}}],"retries":{"attempts":10,"perTryTimeout":"2s"},"route":[{"destination":{"host":"hello-world-svc","port":{"number":3000},"subset":"primary"}}]}]}}\n'}, 'creationTimestamp': '2021-05-07T19:12:54Z', 'generation': 24, 'managedFields': [{'apiVersion': 'networking.istio.io/v1beta1', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:metadata': {'f:annotations': {'.': {}, 'f:kubectl.kubernetes.io/last-applied-configuration': {}}}, 'f:spec': {'.': {}, 'f:gateways': {}, 'f:hosts': {}}}, 'manager': 'kubectl-client-side-apply', 'operation': 'Update', 'time': '2021-05-09T19:01:37Z'}, {'apiVersion': 'networking.istio.io/v1alpha3', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:spec': {'f:http': {}}}, 'manager': 'OpenAPI-Generator', 'operation': 'Update', 'time': '2021-05-09T19:01:39Z'}], 'name': 'vs', 'namespace': 'chaos', 'resourceVersion': '340161', 'uid': '547ccfbc-62d2-4062-a7d3-51b7a5f29431'}, 'spec': {'gateways': ['gw'], 'hosts': ['shishir.hello.com'], 'http': [{'fault': {'abort': {'httpStatus': 500, 'percentage': {'value': 25}}}, 'match': [{'uri': {'prefix': '/'}}], 'retries': {'attempts': 10, 'perTryTimeout': '2s'}, 'route': [{'destination': {'host': 'hello-world-svc', 'port': {'number': 3000}, 'subset': 'primary'}}]}]}}, 'headers': {'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Kubernetes-Pf-Flowschema-Uid': 'ea2fb2d0-82ca-4585-ad52-f81bc9e1b007', 'X-Kubernetes-Pf-Prioritylevel-Uid': '7b1ff444-f341-4cc4-99cf-84878bfe8d33', 'Date': 'Sun, 09 May 2021 19:01:39 GMT', 'Content-Length': '1580'}}'
+[32m[2021-05-10 00:31:39 INFO] [activity:199][39m Pausing after activity for 2s...
+[36m[2021-05-10 00:31:41 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:41 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:31:41 DEBUG] [run:496][39m Running steady-state hypothesis after the method
+[32m[2021-05-10 00:31:41 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:31:41 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:31:41 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:31:41 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:31:41 DEBUG] [activity:180][39m   => succeeded with '{'status': 500, 'headers': {'content-length': '18', 'content-type': 'text/plain', 'date': 'Sun, 09 May 2021 19:01:41 GMT', 'server': 'istio-envoy'}, 'body': 'fault filter abort'}'
+[36m[2021-05-10 00:31:41 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:31:41 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:31:41 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2021-05-10 00:31:41 CRITICAL] [run:511][39m Steady state probe 'request-try' is not in the given tolerance so failing this experiment
+[32m[2021-05-10 00:31:41 INFO] [run:421][39m Experiment ended with status: deviated
+[32m[2021-05-10 00:31:41 INFO] [run:424][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2021-05-10 00:31:41 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:31:41 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-05-10 00:31:41 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:37:15 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-05-10 00:37:15 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-05-10 00:37:15 DEBUG] [cli:78][39m Using settings file '/home/dell/.chaostoolkit/settings.yaml'
+[36m[2021-05-10 00:37:16 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/home/dell/.chaostoolkit/settings.yaml'.
+[36m[2021-05-10 00:37:16 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:37:16 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:37:16 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:37:16 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-05-10 00:37:16 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-05-10 00:37:16 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:37:16 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:37:16 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:37:17 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-05-10 00:37:17 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:37:17 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:37:17 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-05-10 00:37:17 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:37:17 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:37:17 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:37:17 INFO] [run:323][39m Running experiment: Make some requests fail and see what happens.
+[36m[2021-05-10 00:37:17 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-05-10 00:37:17 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-05-10 00:37:17 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-05-10 00:37:17 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:37:17 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-05-10 00:37:17 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:37:17 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:37:17 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:37:17 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:37:17 DEBUG] [activity:180][39m   => succeeded with '{'status': 500, 'headers': {'content-length': '18', 'content-type': 'text/plain', 'date': 'Sun, 09 May 2021 19:07:16 GMT', 'server': 'istio-envoy'}, 'body': 'fault filter abort'}'
+[36m[2021-05-10 00:37:17 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:37:17 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:37:17 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2021-05-10 00:37:17 CRITICAL] [run:480][39m Steady state probe 'request-try' is not in the given tolerance so failing this experiment
+[32m[2021-05-10 00:37:17 INFO] [run:421][39m Experiment ended with status: failed
+[36m[2021-05-10 00:37:17 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:37:17 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-05-10 00:37:17 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:38:07 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-05-10 00:38:07 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-05-10 00:38:07 DEBUG] [cli:78][39m Using settings file '/home/dell/.chaostoolkit/settings.yaml'
+[36m[2021-05-10 00:38:08 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/home/dell/.chaostoolkit/settings.yaml'.
+[36m[2021-05-10 00:38:08 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:38:08 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:38:08 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:38:08 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-05-10 00:38:08 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-05-10 00:38:08 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:38:08 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:38:08 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:38:09 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-05-10 00:38:09 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:38:09 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:38:09 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-05-10 00:38:09 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:38:09 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:38:09 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:38:09 INFO] [run:323][39m Running experiment: Make some requests fail and see what happens.
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-05-10 00:38:09 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-05-10 00:38:09 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:38:09 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-05-10 00:38:09 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:09 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:38:09 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:08:09 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:09 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:09 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:38:09 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:08:09 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:09 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:09 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:38:09 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:08:09 GMT', 'x-envoy-upstream-service-time': '2', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:09 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-05-10 00:38:09 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-05-10 00:38:09 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:09 INFO] [activity:162][39m Action: abort-failure
+[36m[2021-05-10 00:38:09 DEBUG] [python:36][39m Activity 'abort-failure' loaded from '/home/dell/.venvs/chaostk/lib/python3.6/site-packages/chaosistio/fault/actions.py'
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:38:09 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:38:09 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'body': {'apiVersion': 'networking.istio.io/v1alpha3', 'kind': 'VirtualService', 'metadata': {'annotations': {'kubectl.kubernetes.io/last-applied-configuration': '{"apiVersion":"networking.istio.io/v1beta1","kind":"VirtualService","metadata":{"annotations":{},"name":"vs","namespace":"chaos"},"spec":{"gateways":["gw"],"hosts":["shishir.hello.com"],"http":[{"match":[{"uri":{"prefix":"/"}}],"retries":{"attempts":10,"perTryTimeout":"2s"},"route":[{"destination":{"host":"hello-world-svc","port":{"number":3000},"subset":"primary"}}]}]}}\n'}, 'creationTimestamp': '2021-05-07T19:12:54Z', 'generation': 26, 'managedFields': [{'apiVersion': 'networking.istio.io/v1beta1', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:metadata': {'f:annotations': {'.': {}, 'f:kubectl.kubernetes.io/last-applied-configuration': {}}}, 'f:spec': {'.': {}, 'f:gateways': {}, 'f:hosts': {}}}, 'manager': 'kubectl-client-side-apply', 'operation': 'Update', 'time': '2021-05-09T19:07:30Z'}, {'apiVersion': 'networking.istio.io/v1alpha3', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:spec': {'f:http': {}}}, 'manager': 'OpenAPI-Generator', 'operation': 'Update', 'time': '2021-05-09T19:08:09Z'}], 'name': 'vs', 'namespace': 'chaos', 'resourceVersion': '340646', 'uid': '547ccfbc-62d2-4062-a7d3-51b7a5f29431'}, 'spec': {'gateways': ['gw'], 'hosts': ['shishir.hello.com'], 'http': [{'fault': {'abort': {'httpStatus': 500, 'percentage': {'value': 25}}}, 'match': [{'uri': {'prefix': '/'}}], 'retries': {'attempts': 10, 'perTryTimeout': '2s'}, 'route': [{'destination': {'host': 'hello-world-svc', 'port': {'number': 3000}, 'subset': 'primary'}}]}]}}, 'headers': {'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Kubernetes-Pf-Flowschema-Uid': 'ea2fb2d0-82ca-4585-ad52-f81bc9e1b007', 'X-Kubernetes-Pf-Prioritylevel-Uid': '7b1ff444-f341-4cc4-99cf-84878bfe8d33', 'Date': 'Sun, 09 May 2021 19:08:09 GMT', 'Content-Length': '1580'}}'
+[32m[2021-05-10 00:38:09 INFO] [activity:199][39m Pausing after activity for 2s...
+[36m[2021-05-10 00:38:11 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:11 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:38:11 DEBUG] [run:496][39m Running steady-state hypothesis after the method
+[32m[2021-05-10 00:38:11 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:38:11 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:38:11 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:11 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:38:11 DEBUG] [activity:180][39m   => succeeded with '{'status': 500, 'headers': {'content-length': '18', 'content-type': 'text/plain', 'date': 'Sun, 09 May 2021 19:08:10 GMT', 'server': 'istio-envoy'}, 'body': 'fault filter abort'}'
+[36m[2021-05-10 00:38:11 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:11 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:38:11 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[31m[2021-05-10 00:38:11 CRITICAL] [run:511][39m Steady state probe 'request-try' is not in the given tolerance so failing this experiment
+[32m[2021-05-10 00:38:11 INFO] [run:421][39m Experiment ended with status: deviated
+[32m[2021-05-10 00:38:11 INFO] [run:424][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2021-05-10 00:38:11 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:38:11 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-05-10 00:38:11 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:38:37 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-05-10 00:38:37 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-05-10 00:38:37 DEBUG] [cli:78][39m Using settings file '/home/dell/.chaostoolkit/settings.yaml'
+[36m[2021-05-10 00:38:38 DEBUG] [settings:27][39m The Chaos Toolkit settings file could not be found at '/home/dell/.chaostoolkit/settings.yaml'.
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-05-10 00:38:38 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:38:38 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2021-05-10 00:38:38 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-05-10 00:38:38 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:38:38 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:38:38 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:38:38 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-05-10 00:38:38 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-05-10 00:38:38 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-05-10 00:38:38 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2021-05-10 00:38:38 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-05-10 00:38:38 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-05-10 00:38:38 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-05-10 00:38:38 INFO] [run:323][39m Running experiment: Make some requests fail and see what happens.
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-05-10 00:38:38 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-05-10 00:38:38 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:38:38 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-05-10 00:38:38 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:38 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:38:38 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:08:38 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:38 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:38 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:38:38 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:08:38 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:38 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:38 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:38:38 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:08:38 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:38 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-05-10 00:38:38 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-05-10 00:38:38 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:38 INFO] [activity:162][39m Action: abort-failure
+[36m[2021-05-10 00:38:38 DEBUG] [python:36][39m Activity 'abort-failure' loaded from '/home/dell/.venvs/chaostk/lib/python3.6/site-packages/chaosistio/fault/actions.py'
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:38:38 DEBUG] [__init__:68][39m Using Kubernetes context: default
+[36m[2021-05-10 00:38:38 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'body': {'apiVersion': 'networking.istio.io/v1alpha3', 'kind': 'VirtualService', 'metadata': {'annotations': {'kubectl.kubernetes.io/last-applied-configuration': '{"apiVersion":"networking.istio.io/v1beta1","kind":"VirtualService","metadata":{"annotations":{},"name":"vs","namespace":"chaos"},"spec":{"gateways":["gw"],"hosts":["shishir.hello.com"],"http":[{"match":[{"uri":{"prefix":"/"}}],"retries":{"attempts":10,"perTryTimeout":"2s"},"route":[{"destination":{"host":"hello-world-svc","port":{"number":3000},"subset":"primary"}}]}]}}\n'}, 'creationTimestamp': '2021-05-07T19:12:54Z', 'generation': 28, 'managedFields': [{'apiVersion': 'networking.istio.io/v1beta1', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:metadata': {'f:annotations': {'.': {}, 'f:kubectl.kubernetes.io/last-applied-configuration': {}}}, 'f:spec': {'.': {}, 'f:gateways': {}, 'f:hosts': {}}}, 'manager': 'kubectl-client-side-apply', 'operation': 'Update', 'time': '2021-05-09T19:08:17Z'}, {'apiVersion': 'networking.istio.io/v1alpha3', 'fieldsType': 'FieldsV1', 'fieldsV1': {'f:spec': {'f:http': {}}}, 'manager': 'OpenAPI-Generator', 'operation': 'Update', 'time': '2021-05-09T19:08:38Z'}], 'name': 'vs', 'namespace': 'chaos', 'resourceVersion': '340686', 'uid': '547ccfbc-62d2-4062-a7d3-51b7a5f29431'}, 'spec': {'gateways': ['gw'], 'hosts': ['shishir.hello.com'], 'http': [{'fault': {'abort': {'httpStatus': 500, 'percentage': {'value': 20}}}, 'match': [{'uri': {'prefix': '/'}}], 'retries': {'attempts': 10, 'perTryTimeout': '2s'}, 'route': [{'destination': {'host': 'hello-world-svc', 'port': {'number': 3000}, 'subset': 'primary'}}]}]}}, 'headers': {'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Kubernetes-Pf-Flowschema-Uid': 'ea2fb2d0-82ca-4585-ad52-f81bc9e1b007', 'X-Kubernetes-Pf-Prioritylevel-Uid': '7b1ff444-f341-4cc4-99cf-84878bfe8d33', 'Date': 'Sun, 09 May 2021 19:08:38 GMT', 'Content-Length': '1580'}}'
+[32m[2021-05-10 00:38:38 INFO] [activity:199][39m Pausing after activity for 2s...
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-05-10 00:38:40 DEBUG] [run:496][39m Running steady-state hypothesis after the method
+[32m[2021-05-10 00:38:40 INFO] [hypothesis:183][39m Steady state hypothesis: The app is healthy
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:40 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:38:40 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:08:40 GMT', 'x-envoy-upstream-service-time': '2', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:40 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:40 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:38:40 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:08:40 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:40 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-05-10 00:38:40 INFO] [activity:162][39m Probe: request-try
+[36m[2021-05-10 00:38:40 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'x-powered-by': 'Express', 'content-type': 'text/html; charset=utf-8', 'content-length': '78', 'etag': 'W/"4e-QWzVRavhRzevRuyLj+XT4d0rG6c"', 'date': 'Sun, 09 May 2021 19:08:40 GMT', 'x-envoy-upstream-service-time': '0', 'server': 'istio-envoy'}, 'body': 'hello world. pod name is: hello-world-5d8c7ddb54-nr475, node name is: minikube'}'
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-05-10 00:38:40 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-05-10 00:38:40 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-05-10 00:38:40 INFO] [run:809][39m Let's rollback...
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-05-10 00:38:40 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-05-10 00:38:40 INFO] [run:421][39m Experiment ended with status: completed
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-05-10 00:38:40 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-05-10 00:38:40 DEBUG] [caching:42][39m Clearing activities cache
