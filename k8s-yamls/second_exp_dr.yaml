@@ -1,0 +1,12 @@
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: dr
+  namespace: chaos
+spec:
+  host: hello-world-svc
+  subsets:
+  - name: primary
+    labels:
+      app: hello-world
