@@ -1,0 +1,32 @@
+version: 1
+title: Terminate pods and see what happens 
+description: Whenever a pod will go down it will not come back on it's own. This is being shown here. 
+
+steady-state-hypothesis:
+  title: Pod exists
+  probes:
+  - name: pod-exists
+    type: probe
+    tolerance: 1
+    provider:
+      type: python
+      func: count_pods
+      module: chaosk8s.pod.probes
+      arguments:
+        label_selector: app=hello-world
+        ns: chaos
+
+method:
+- type: action
+  name: terminate-pod
+  provider:
+    type: python
+    module: chaosk8s.pod.actions
+    func: terminate_pods
+    arguments:
+      rand: true
+      label_selector: app=hello-world
+      ns: chaos
+  pauses:
+    after: 240
+
