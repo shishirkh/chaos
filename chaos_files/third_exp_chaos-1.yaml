@@ -1,0 +1,52 @@
+version: 1.0.0
+title: Force some requests to be delayed and see what happens.  
+description: If responses are delayed, the dependant application should do something to tackle the situation.
+
+configuration:
+  ingress_addr:
+      type: env
+      key: INGRESS_ADDR
+
+steady-state-hypothesis:
+  title: The app is healthy
+  probes:
+  - type: probe
+    name: request-try 
+    tolerance: 200
+    provider:
+      type: http
+      timeout: 5
+      verify_tls: false
+      url: http://${ingress_addr}/
+      headers:
+        Host: shishir.hello.com
+  - type: probe
+    tolerance: 200
+    ref: request-try 
+  - type: probe
+    tolerance: 200
+    ref: request-try 
+  - type: probe
+    tolerance: 200
+    ref: request-try 
+
+method:
+- type: action
+  name: delay
+  provider:
+    type: python
+    module: chaosistio.fault.actions
+    func: add_delay_fault
+    arguments:
+      virtual_service_name: vs
+      fixed_delay: 5s
+      routes:
+        - destination:
+            host: hello-world-svc
+            subset: primary
+      percentage: 20
+      version: networking.istio.io/v1alpha3
+      ns: chaos
+  pauses:
+    after: 1
+

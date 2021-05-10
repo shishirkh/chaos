@@ -28,5 +28,5 @@ method:
       label_selector: app=hello-world
       ns: chaos
   pauses:
-    after: 240
+          after: 10
 

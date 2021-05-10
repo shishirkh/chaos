@@ -1,0 +1,25 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: vs
+  namespace: chaos
+spec:
+  gateways:
+  - gw
+  hosts:
+  - shishir.hello.com
+  http:
+  - match:
+    - uri:
+        prefix: "/"
+    route:
+    - destination:
+        host: hello-world-svc
+        port:
+          number: 3000
+        subset: primary
+    retries:
+      attempts: 10
+      perTryTimeout: 5s
+      retryOn: 5xx,connect-failure
+
